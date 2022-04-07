@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
           width: 10,
           margin: const EdgeInsets.all(5),
         ),
-        title: Text('Good Morning', style: titleArticle.copyWith(
+        title: Text('Good Morning,Guys!', style: titleArticle.copyWith(
           fontSize: 20
         ),),
         actions: [
