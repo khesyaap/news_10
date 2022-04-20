@@ -25,19 +25,23 @@ class NewsItem extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Padding(
-                padding: EdgeInsets.only(left: 5),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(18),
-                  child: Image.network(article.urlToImage.toString(),
-                    height: 80,
-                     width: 80,
-                     fit: BoxFit.cover,
-                  ),
+            Expanded(
+              flex: 1,
+              child: Padding(
+                  padding: EdgeInsets.only(left: 5),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(18),
+                    child: Image.network(article.urlToImage.toString(),
+                      height: 80,
+                       width: 80,
+                       fit: BoxFit.cover,
+                    ),
+                ),
               ),
             ),
             SizedBox(width: 10,),
             Expanded(
+              flex: 3,
                 child: Container(
                   width: 220,
                   child: Column(
